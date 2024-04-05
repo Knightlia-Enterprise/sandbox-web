@@ -1,11 +1,10 @@
 import { defineConfig } from "vite";
-import { sveltekit } from "@sveltejs/kit/vite";
+import path from "path";
 
 export default defineConfig({
-    plugins: [sveltekit()],
-    test: {
-        include: ["**/*.{test,spec}.ts"],
-        environment: "jsdom",
-        globals: true
+    resolve: {
+        alias: {
+            "@": path.resolve(__dirname, "src")
+        }
     }
 });

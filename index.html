@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Sandbox - Particle Chat</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+    </head>
+
+    <body>
+        <!-- PreLoader -->
+        <main id="pre-loader" class="flex-center flex-col">
+            <img src="https://t.ly/9Nmql" height="200" width="200" />
+            <div class="spinner"></div>
+        </main>
+
+
+        <!-- Chat -->
+        <main class="flex-col">
+            <!-- Top Bar -->
+            <nav>
+                <div>
+                    <h3>Sandbox</h3>
+                    <button id="name-btn">Set Name...</button>
+                </div>
+                <div>
+                    <button id="user-list-btn">U</button>
+                </div>
+            </nav>
+
+            <!-- Main chat content -->
+            <div class="chat">
+                <div class="chat-container flex-col">
+                    <div class="chat-history">
+                        <!-- Bubble -->
+                        <div class="bubble">
+                            <div class="avatar flex-center">A</div>
+                            <div class="bubble-body">
+                                <div class="bubble-header">
+                                    <strong>Sender</strong>
+                                    <small>11:11 PM</small>
+                                </div>
+                                <div>The actual message content.</div>
+                            </div>
+                        </div>
+                        <div class="bubble">
+                            <div class="avatar flex-center">A</div>
+                            <div class="bubble-body">
+                                <div class="bubble-header">
+                                    <strong>Sender</strong>
+                                    <small>11:11 PM</small>
+                                </div>
+                                <div>The actual message content. This one is longer and should span a few lines at least.</div>
+                            </div>
+                        </div>
+                        <div class="bubble sender">
+                            <div class="avatar flex-center">A</div>
+                            <div class="bubble-body">
+                                <div class="bubble-header">
+                                    <strong>Sender</strong>
+                                    <small>11:11 PM</small>
+                                </div>
+                                <div>The actual message content.</div>
+                            </div>
+                        </div>
+                        <div class="bubble sender">
+                            <div class="avatar flex-center">A</div>
+                            <div class="bubble-body">
+                                <div class="bubble-header">
+                                    <strong>Sender</strong>
+                                    <small>11:11 PM</small>
+                                </div>
+                                <div>The actual message content. This one is longer and should span a few lines at least.</div>
+                            </div>
+                        </div>
+                        <div class="bubble">
+                            <div class="avatar flex-center">A</div>
+                            <div class="bubble-body">
+                                <div class="bubble-header">
+                                    <strong>Sender</strong>
+                                    <small>11:11 PM</small>
+                                </div>
+                                <div>The actual message content.</div>
+                            </div>
+                        </div>
+                        <div class="bubble">
+                            <div class="avatar flex-center">A</div>
+                            <div class="bubble-body">
+                                <div class="bubble-header">
+                                    <strong>Sender</strong>
+                                    <small>11:11 PM</small>
+                                </div>
+                                <div>The actual message content. This one is longer and should span a few lines at least.</div>
+                            </div>
+                        </div>
+                        <div class="bubble sender">
+                            <div class="avatar flex-center">A</div>
+                            <div class="bubble-body">
+                                <div class="bubble-header">
+                                    <strong>Sender</strong>
+                                    <small>11:11 PM</small>
+                                </div>
+                                <div>The actual message content.</div>
+                            </div>
+                        </div>
+                        <div class="bubble sender">
+                            <div class="avatar flex-center">A</div>
+                            <div class="bubble-body">
+                                <div class="bubble-header">
+                                    <strong>Sender</strong>
+                                    <small>11:11 PM</small>
+                                </div>
+                                <div>The actual message content. This one is longer and should span a few lines at least.</div>
+                            </div>
+                        </div>
+                        <div class="bubble">
+                            <div class="avatar flex-center">A</div>
+                            <div class="bubble-body">
+                                <div class="bubble-header">
+                                    <strong>Sender</strong>
+                                    <small>11:11 PM</small>
+                                </div>
+                                <div>The actual message content.</div>
+                            </div>
+                        </div>
+                        <div class="bubble">
+                            <div class="avatar flex-center">A</div>
+                            <div class="bubble-body">
+                                <div class="bubble-header">
+                                    <strong>Sender</strong>
+                                    <small>11:11 PM</small>
+                                </div>
+                                <div>The actual message content. This one is longer and should span a few lines at least.</div>
+                            </div>
+                        </div>
+                        <div class="bubble sender">
+                            <div class="avatar flex-center">A</div>
+                            <div class="bubble-body">
+                                <div class="bubble-header">
+                                    <strong>Sender</strong>
+                                    <small>11:11 PM</small>
+                                </div>
+                                <div>The actual message content.</div>
+                            </div>
+                        </div>
+                        <div class="bubble sender">
+                            <div class="avatar flex-center">A</div>
+                            <div class="bubble-body">
+                                <div class="bubble-header">
+                                    <strong>Sender</strong>
+                                    <small>11:11 PM</small>
+                                </div>
+                                <div>The actual message content. This one is longer and should span a few lines at least.</div>
+                            </div>
+                        </div>                        <div class="bubble">
+                            <div class="avatar flex-center">A</div>
+                            <div class="bubble-body">
+                                <div class="bubble-header">
+                                    <strong>Sender</strong>
+                                    <small>11:11 PM</small>
+                                </div>
+                                <div>The actual message content.</div>
+                            </div>
+                        </div>
+                        <div class="bubble">
+                            <div class="avatar flex-center">A</div>
+                            <div class="bubble-body">
+                                <div class="bubble-header">
+                                    <strong>Sender</strong>
+                                    <small>11:11 PM</small>
+                                </div>
+                                <div>The actual message content. This one is longer and should span a few lines at least.</div>
+                            </div>
+                        </div>
+                        <div class="bubble sender">
+                            <div class="avatar flex-center">A</div>
+                            <div class="bubble-body">
+                                <div class="bubble-header">
+                                    <strong>Sender</strong>
+                                    <small>11:11 PM</small>
+                                </div>
+                                <div>The actual message content.</div>
+                            </div>
+                        </div>
+                        <div class="bubble sender">
+                            <div class="avatar flex-center">A</div>
+                            <div class="bubble-body">
+                                <div class="bubble-header">
+                                    <strong>Sender</strong>
+                                    <small>11:11 PM</small>
+                                </div>
+                                <div>The actual message content. This one is longer and should span a few lines at least.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Editor -->
+                    <div class="editor">
+                        <div contenteditable placeholder="Enter message..." class="input"></div>
+                        <button class="primary">Send</button>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="collapsed" id="sidebar">
+                    <div id="overlay"></div>
+                    <aside class="flex-col">
+                        <h3>User List</h3>
+                        <ul>
+                            <li><strong>First</strong></li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Person</li>
+                            <li>Last</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </main>
+
+        <!-- Modal -->
+        <dialog id="name-dialog">
+            <form class="flex-col">
+                <div>
+                    <h3>Set Name</h3>
+                </div>
+                <input placeholder="Enter name here..." required />
+                <div>
+                    <button id="modal-cancel-btn" type="button">Cancel</button>
+                    <button class="primary">Set Name</button>
+                </div>
+            </form>
+        </dialog>
+        
+        <!-- Scripts -->
+        <script type="module" src="src/app.ts"></script>
+    </body>
+</html>
