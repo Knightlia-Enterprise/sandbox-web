@@ -6,3 +6,7 @@ function toggleUserList() {
 
 document.getElementById("user-list-btn")!.onclick = toggleUserList;
 document.getElementById("overlay")!.onclick = toggleUserList;
+
+if (screen.width >= 768) {
+    toggleUserList();
+}

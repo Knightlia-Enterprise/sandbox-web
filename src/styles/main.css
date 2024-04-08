@@ -309,3 +309,19 @@ form {
         gap: 0.5rem;
     }
 }
+
+
+/* Medium Screens */
+@media (min-width: 768px) {
+    #overlay {
+        display: none;
+    }
+
+    aside {
+        position: relative;
+
+        ul {
+            height: 100%;
+        }
+    }
+}
