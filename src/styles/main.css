@@ -2,17 +2,34 @@
 :root {
     --bg: #f1f5f9;
     --bg-light: white;
+    --colour: black;
     --border: #cbd5e1;
     --primary: #4f46e5;
     --primary-light: #6366f1;
     --outline: #cbd5e1;
 
     --btn-bg: white;
+    --btn-colour: black;
     --btn-hover-bg: #f1f5f9;
 
     --input-bg: white;
+    --editor-bg: white;
+}
 
-    --bubble-bg: white;
+.dark {
+    --bg: #1e293b;
+    --bg-light: #0f172a;
+    --colour: white;
+    --border: #334155;
+    --primary: #4f46e5;
+    --primary-light: #6366f1;
+    --outline: #334155;
+
+    --btn-bg: #1e293b;
+    --btn-hover-bg: #334155;
+
+    --input-bg: #1e293b;
+    --editor-bg: #0f1a2b;
 }
 
 
@@ -37,6 +54,7 @@ main {
     height: 100%;
     width: 100%;
     background: var(--bg);
+    color: var(--colour);
 }
 
 
@@ -50,6 +68,7 @@ button {
     cursor: pointer;
     user-select: none;
     transition: transform 150ms;
+    color: var(--colour);
 
     &:hover {
         background: var(--btn-hover-bg);
@@ -87,9 +106,8 @@ input, .input {
     border-radius: 0.5rem;
     padding: 0.75rem 1rem;
     font-size: 0.9rem;
-    /* overflow-y: auto; */
-    /* max-height: 4rem; */
     margin-bottom: 0.25rem;
+    color: var(--colour);
 
     &:focus {
         outline: 1px solid var(--outline);
@@ -180,6 +198,7 @@ nav > div {
 div[contenteditable] {
     overflow-y: auto;
     max-height: 4rem;
+    background: var(--editor-bg);
 
     &:empty:before {
         content: attr(placeholder);
@@ -200,8 +219,8 @@ div[contenteditable] {
 .avatar {
     background: var(--primary);
     color: white;
-    height: 2.75rem;
-    width: 2.75rem;
+    height: 2.5rem;
+    width: 2.5rem;
     border-radius: 10rem;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -215,7 +234,7 @@ div[contenteditable] {
 }
 
 .bubble-body {
-    background: white;
+    background: var(--editor-bg);
     border: 1px solid var(--border);
     border-radius: 0.5rem;
     padding: 0.75rem 0.75rem;
@@ -298,6 +317,8 @@ dialog {
     padding: 1.5rem;
     border: none;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    background: var(--bg-light);
+    color: var(--colour);
 }
 
 form {
@@ -325,3 +346,7 @@ form {
         }
     }
 }
+
+
+/* Dark */
+
